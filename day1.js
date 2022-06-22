@@ -23,3 +23,4 @@ function main() {
   console.log(s + myString)
   // The 's' variable above should be printed first.
 }
+main()
