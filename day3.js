@@ -6,3 +6,4 @@ function main() {
         console.log('Not Weird')
     }
 }
+// }
