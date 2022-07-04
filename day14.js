@@ -1,44 +1,42 @@
+// class Difference
+// {
+//     int[] elements;
+//     public int maximumDifference;
 
+//     public Difference(int[] elements)
+//     {
+//         this.elements = elements;
+//     }
 
-class Difference
-{
-    int[] elements;
-    public int maximumDifference;
+//     public void computeDifference()
+//     {
+//         int max = 0;
 
-    public Difference(int[] elements)
-    {
-        this.elements = elements;
-    }
+//         for (int i = 0; i < elements.Length; i++)
+//         {
+//             for (int j = 0; j < elements.Length; j++)
+//             {
+//                 int abs = Math.Abs(elements[i] - elements[j]);
+//                 if (abs > max) max = abs;
+//             }
+//         }
 
-    public void computeDifference()
-    {
-        int max = 0;
+//         maximumDifference = max;
+//     }
+// }
 
-        for (int i = 0; i < elements.Length; i++)
-        {
-            for (int j = 0; j < elements.Length; j++)
-            {
-                int abs = Math.Abs(elements[i] - elements[j]);
-                if (abs > max) max = abs;
-            }
-        }
+// class Solution
+// {
+//     static void Main(string[] args)
+//     {
+//         int.Parse(Console.ReadLine());
 
-        maximumDifference = max;
-    }
-}
+//         int[] a = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
 
-class Solution
-{
-    static void Main(string[] args)
-    {
-        int.Parse(Console.ReadLine());
+//         Difference d = new Difference(a);
 
-        int[] a = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
+//         d.computeDifference();
 
-        Difference d = new Difference(a);
-
-        d.computeDifference();
-
-        Console.Write(d.maximumDifference);
-    }
-}
+//         Console.Write(d.maximumDifference);
+//     }
+// }
