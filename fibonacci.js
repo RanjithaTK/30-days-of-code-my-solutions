@@ -6,3 +6,4 @@ function fibonacci(n) {
   return fibArray
 }
 console.log(fibonacci(10))
+console.log(fibonacci(10))
